@@ -11,12 +11,6 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if '?' in message.content[-2] and '.' in message.content[-1]:
-        if message.channel.name == 'comandos-bot':
-            print(message.author.nick)
-            print(message.channel.name, 'é comandos-bot')
-            await message.channel.send(random.choice(lista))
-        else:
-            print(message.author.nick)
-            print(message.channel.name, 'não é comandos-bot')
-            await message.channel.send('Por favor,só use comandos em #comandos-bot(Leia as #regras)')
-client.run('NjE0NjE5NDA2NTEyODE2MTMw.XWMCMw.xwv5Qj42XjpUOmzyRx_bhNSRYQ0')
+        print('usado')
+        await message.channel.send(random.choice(lista))
+client.run('')
